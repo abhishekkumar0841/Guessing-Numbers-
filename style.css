@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #fff;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+body{
+    background-color: #333;
+}
+
+.container{
+    max-width: 400px;
+    margin: auto;
+    height: auto;
+    padding: 20px;
+    background-color: #333;
+}
+
+.gameName h1{
+    text-align: center;
+    padding: 0 5px;
+}
+
+.gameName p{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.suggestionText h2{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.randomNumber{
+    background-color: #000;
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    box-shadow: 2px 2px 20px #fff;
+}
+
+.randomNumber h2{
+    font-size: 5rem;
+}
+
+.restart{
+    margin-top: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#restart{
+    transition: all 0.3s ease-out;
+}
+
+#restart:hover{
+    transform: scale(1.1);
+}
+
+.restart h3{
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    color: #000;
+}
+
+.playerInput{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.playerInput input, .check{
+    height: 80px;
+    width: 150px;
+    text-align: center;
+    font-size: 2.5rem;
+    cursor: pointer;
+    border-radius: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+
+.playerInput input{
+    border: 5px solid #fff;
+    padding: 5px;
+    transition: all 0.3s ease-out;
+}
+
+::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+}
+
+.playerInput input:hover{
+    transform: scale(1.1);
+}
+
+.check{
+    border: none;
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.check:hover{
+    transform: scale(1.1);
+}
+
+.records{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.chances h2{
+    letter-spacing: 3px;
+}
+
+.highscore h2{
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+}
+
+#chances{
+    background-color: #fff;
+    color: #000;
+    padding: 2px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#highscore{
+    background-color: #fff;
+    color: #000;
+    padding: 2px 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+footer{
+    max-width: 400px;
+    margin: auto;
+    line-height: 30px;
+    border: 1px solid#fff;
+    padding: 10px 5px 20px 20px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 360px){
+    h1{
+    font-size: 2rem;
+    }
+
+    h2{
+    font-size: 1.5rem;
+    }
+
+    h3{
+    font-size: 1rem;
+    }
+
+    #restart{
+        font-size: 1.5rem;
+    }
+
+    .playerInput{
+        gap: 30px;
+        justify-content: space-between;
+    }
+
+    .playerInput input, .check{
+    height: 80px;
+    width: 150px !important;
+    font-size: 2rem;
+    }
+
+    .records{
+        gap: 20px;
+    }
+
+}
+

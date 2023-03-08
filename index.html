@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gameName">
+            <h1>Guess Numbers</h1>
+            <p>Between 1 to 20</p>
+        </div>
+        <div class="suggestionText">
+            <h2 id="changingText">..Are You Ready..</h2>
+        </div>
+        <div class="randomNumber">
+            <h2 id="secretNumber">?</h2>
+        </div>
+        <div class="restart">
+            <h3 id="restart">Restart</h3>
+        </div>
+        <div class="playerInput">
+            <input type="number" placeholder="Guess" id="input">
+                <button class="check">Check</button>
+        </div>
+        <div class="records">
+            <div class="chances">
+                <h2>Life : <span id="chances">5</span></h2>
+            </div>
+            <div class="highscore">
+                <h2>Score : <span id="highscore">0</span></h2>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Disclaimer :
+        <p>
+                This simple game is created by
+                <b>
+                    Abhishek Kumar
+                </b>
+                using only <b>HTML, CSS and JavaScript .</b>
+        </p>
+    </footer>
+
+    
+    <script src="app.js"></script>
+</body>
+</html>
